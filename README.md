@@ -1,2 +1,3 @@
-# mataf-demo
-Public preview of Mataf MarCom and Kheradnameh Acadey
+# Mataf demo
+
+Public visual preview of Mataf MarCom and Kheradnameh Academy. Forms do not submit data.
