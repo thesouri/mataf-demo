@@ -22,3 +22,5 @@ const career=$('#career-form');if(career)career.onsubmit=async e=>{e.preventDefa
 })();
 
 (()=>{const k=new URLSearchParams(location.search).get('khan');if(!['create','influence','growth'].includes(k))return;document.querySelectorAll('[data-filter]').forEach(e=>e.classList.toggle('active',e.dataset.filter===k));document.querySelectorAll('[data-khan]').forEach(e=>e.hidden=e.dataset.khan!==k)})();
+
+(()=>{if(!document.querySelector('.academy-library'))return;const k=new URLSearchParams(location.search).get('topic');if(!['create','influence','growth'].includes(k))return;document.querySelectorAll('.context-service[data-service-id]').forEach(e=>{const n=Number(e.dataset.serviceId.split('-').pop()),group=n<=4?'create':n<=9?'influence':'growth';e.hidden=group!==k});})();
